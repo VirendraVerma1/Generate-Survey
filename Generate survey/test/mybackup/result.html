@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result page</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+    <style type="text/css">
+    .form-inline{
+    	position: absolute;
+        padding: 10px 0px 0px 40px;
+
+    }
+    	
+    	@media screen and (max-width: 576px){
+    		 .form-inline{
+    		 	padding: 10px 0px 0px 40px;
+    		 }
+             .form-inline h1{
+             	font-size: 22px;
+             }
+             .form-inline .btn-group{
+             	width: 10px;
+             	height: 30px;
+             	margin-left: 5px;
+             }
+             .form-inline .btn-group .btn-primary{
+             	font-size: 11px;
+             }
+        }
+
+         footer{
+  	background-color:	#696969;
+  }
+
+    </style>
+
+</head>
+
+
+<body>
+      
+<!-------------Navigation------------------>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<a class="navbar-brand" href="#"><h4 class="display-6">Company Name</h4></a>
+    <button class="navbar-toggler" type="button" data-target="#navResponsive" data-toggle="collapse">
+    	<span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navResponsive">
+    	<ul class="navbar-nav ml-auto">
+    		<li class="nav-item">
+    			<a class="nav-link" href="homepage.html">Home</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link" href="profile.html">Profile</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link" href="#contact">Contact</a>
+    		</li>
+    	</ul>
+    </div>
+</nav>
+<!-----End Of Navigation----->
+
+<!----------------------Heading And Buttons Start------------------>
+<div class="container-fluid padding">
+ <div class="row text-center padding">
+	<div class="col-12">
+		<form class="form-inline">
+			<h1 class="display-6 mr-sm-2">1.</h1>
+			<h1 class="display-6 mr-sm-2">Food Quality</h1>
+
+        <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Doughnut chart</button>
+
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Polar area chart</a>
+               <a class="dropdown-item" href="#">Pie chart</a>
+             </div>
+        </div>
+
+		</form><br><br><br>
+
+          
+          <canvas id="pie-chart" min-width= "420px" height="150px"></canvas>
+
+          <script>
+          	new Chart(document.getElementById("pie-chart"), {
+    type: 'doughnut',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      datasets: [{
+        label: "Population (millions)",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+        data: [2478,5267,734,784,433]
+      }]
+    },
+    options: {}
+});
+          </script>
+
+	</div>
+ </div>
+</div>
+<!----------------------Heading And Buttons End------------------>  
+
+<!------Foooter Start-------->
+ 
+ <footer>
+  	<div  id="contact" class="container-fluid padding">
+  		<div class="row text-center padding">
+  		<div class="col-md-4">
+  			<img src="">
+  			<hr class="light">
+  			<p style="color: white">55--555</p>
+  			<p style="color: white">Swaraj@gmail.com</p>
+  			<p style="color: white">10 Street Name</p>
+  			<p style="color: white">city,state,0000</p>
+  		</div>
+  		<div class="col-md-4">
+  			<hr class="light">
+  			<p style="color: white">Our hours</p>
+  			<hr class="light">
+  			<p style="color: white">Monday:10am-7pm</p>
+  			<p style="color: white">Monday:10am-7pm</p>
+  			<p style="color: white">Monday:10am-7pm</p>
+  		</div>
+  		<div class="col-md-4">
+  			<hr class="light">
+  			<p style="color: white">Our hours</p>
+  			<hr class="light">
+  			<p style="color: white">Monday:10am-7pm</p>
+  			<p style="color: white">Monday:10am-7pm</p>
+  			<p style="color: white">Monday:10am-7pm</p>
+  		</div>
+  		<div class="col-12">
+  			<hr class="light">
+  			<h5 style="color: white">&copy;Survey Creator</h5>
+  		</div>
+  	</div>
+  	</div>
+  </footer>
+<!------Foooter End-------->
+
+
+</body>
+</html>

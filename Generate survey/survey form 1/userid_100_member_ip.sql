@@ -1,0 +1,193 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Aug 06, 2019 at 01:28 PM
+-- Server version: 10.3.16-MariaDB
+-- PHP Version: 7.3.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `id8517650_survey`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userid_100_member_ip`
+--
+
+CREATE TABLE `userid_100_member_ip` (
+  `ID` int(255) UNSIGNED NOT NULL,
+  `userid_100_surveyid_6` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `userid_100_surveyid_12` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `userid_100_member_ip`
+--
+
+INSERT INTO `userid_100_member_ip` (`ID`, `userid_100_surveyid_6`, `userid_100_surveyid_12`) VALUES
+(1, '', NULL),
+(2, '', NULL),
+(3, '', NULL),
+(4, '', NULL),
+(5, '', NULL),
+(6, '', NULL),
+(7, '', NULL),
+(8, '', NULL),
+(9, '', NULL),
+(10, '', NULL),
+(11, '', NULL),
+(12, '2405:204:a49e:9948:19c6:56f4:626a:f9fd', NULL),
+(13, '2409:4063:2096:75f7:9857:722e:aaee:fe6a', NULL),
+(14, '2409:4063:230d:a3e6:d0ca:7df4:4ffe:f74e', NULL),
+(15, '157.43.84.57', NULL),
+(16, '157.43.55.171', NULL),
+(17, '2405:204:a49e:9948:78ba:f5c4:5949:55e3', NULL),
+(18, '2409:4063:2003:1e30::17c6:a1', NULL),
+(19, '2409:4063:2096:75f7::175c:58b0', NULL),
+(20, '2402:3a80:922:3a33:6edd:18ce:b609:de60', NULL),
+(21, '2405:204:a28d:69b7:0:0:1a40:10b1', NULL),
+(22, '68.183.95.23', NULL),
+(23, '2409:4063:4001:2d70:762f:c5f2:f4c4:5374', NULL),
+(24, '2405:204:a39e:dbc:20c0:57fd:298:1192', NULL),
+(25, '2405:204:a498:c776:7729:c8a:a60f:5912', NULL),
+(26, '2405:204:a79a:3955::58a:18a4', NULL),
+(27, '117.234.121.76', NULL),
+(28, '2405:204:a706:29b7:772a:a50:914:2b0a', NULL),
+(29, '2405:204:a498:905f:8acb:c2c5:1f45:dff8', NULL),
+(30, '157.36.229.70', NULL),
+(31, '157.36.229.70', NULL),
+(32, '2409:4055:611:2b1c::2a47:10a5', NULL),
+(33, '2409:4063:2096:75f7:a0dd:71b6:2a1:61db', NULL),
+(34, '2405:204:1389:cc64::b99:10a1', NULL),
+(35, '2405:205:4291:e62f:b0a8:fa2d:ed7e:aff6', NULL),
+(36, '2405:204:a399:afdc::83b:90a5', NULL),
+(37, 'unknown', NULL),
+(38, '2405:205:428a:82bb::2012:20a1', NULL),
+(39, '103.47.170.49', NULL),
+(40, '106.205.84.173', NULL),
+(41, '157.45.121.141', NULL),
+(42, '106.205.84.173', NULL),
+(43, '2405:204:100e:8eed:e8f6:968b:50bc:b2e4', NULL),
+(44, '2409:4063:2310:b4e:6126:fb7f:d8bb:bd29', NULL),
+(45, '182.74.117.211', NULL),
+(46, '2405:204:a1ad:3268::207a:a0b1', NULL),
+(47, '2409:4055:719:e8c9:2f38:d2a5:5a8b:64d2', NULL),
+(48, '2402:8100:308e:3c7c:1:0:e4e1:e842', NULL),
+(49, '106.205.125.28', NULL),
+(50, '2405:204:a01d:12d7:9375:5813:33b3:d48f', NULL),
+(51, '157.43.72.20', NULL),
+(52, '2401:4900:1690:6107:1c9:bc88:64be:4377', NULL),
+(53, '2401:4900:1690:6107:1c9:bc88:64be:4377', NULL),
+(54, '2405:204:a319:7243:cb61:2bd3:7578:37ef', NULL),
+(55, '2401:4900:c13:ded6:65aa:9efc:e0c2:e740', NULL),
+(56, '2405:204:a401:c721::1116:8a1', NULL),
+(57, '2405:204:a401:c721::1116:8a1', NULL),
+(58, '2405:204:a401:c721::1116:8a1', NULL),
+(59, '2405:204:a401:c721::1116:8a1', NULL),
+(60, '27.6.205.127', NULL),
+(61, '49.14.103.75', NULL),
+(62, '47.8.171.147', NULL),
+(63, '2409:4063:2380:ab36:f45a:6c5c:3a65:501', NULL),
+(64, '112.79.205.15', NULL),
+(65, '2405:204:1387:c388:e332:50c0:28b2:3fc0', NULL),
+(66, '2405:204:a715:8944:b321:5b2d:1a07:a18e', NULL),
+(67, '2405:204:a411:7346:ce27:5f39:79c9:3538', NULL),
+(68, '2405:204:a31c:a109::29e6:f0b1', NULL),
+(69, '2405:204:a182:b36:e8b2:411d:69a4:74e9', NULL),
+(70, '2405:204:a0a3:cea5::1a3c:e8b1', NULL),
+(71, '', NULL),
+(72, '27.97.9.65', NULL),
+(73, '2409:4055:60e:9191:44fd:e1a6:9fea:9589', NULL),
+(74, '2405:205:412a:94c9::bcc:a0b0', NULL),
+(75, '2405:204:a108:8e16:999d:3c55:a7a2:96f4', NULL),
+(76, '157.43.11.189', NULL),
+(77, '2409:4063:238e:1095:c916:1b0c:3763:8c44', NULL),
+(78, '117.252.14.69', NULL),
+(79, '117.252.14.69', NULL),
+(80, '2405:205:4310:43f9:1ee5:9b50:72d4:866f', NULL),
+(81, '2405:204:a58c:18c4::31e:10a5', NULL),
+(82, '106.219.131.53', NULL),
+(83, '2409:4063:4099:9ba7:9556:4212:1eba:d0ce', NULL),
+(84, '2409:4042:228e:934d:2972:abcd:2b12:7d0c', NULL),
+(85, '117.223.247.158', NULL),
+(86, '2405:204:a013:6ef4:73a5:2f9:7d82:49b2', NULL),
+(87, '106.203.27.40', NULL),
+(88, '171.76.191.151', NULL),
+(89, '2405:204:a68d:e0df::1c05:90ac', NULL),
+(90, '171.76.178.211', NULL),
+(91, '171.76.173.77', NULL),
+(92, '2405:205:24a4:92fc:68ff:a0de:6cff:48c1', NULL),
+(93, '2409:4060:208f:9d78:a5da:8aaf:bee3:ca56', NULL),
+(94, '49.206.17.111', NULL),
+(95, '', NULL),
+(96, '', NULL),
+(97, '2405:204:a408:b69a:94:317:d6c9:c11', NULL),
+(98, '2409:4063:4099:9ba7::9ad:48a0', NULL),
+(99, '2409:4063:4099:9ba7::9ad:48a0', NULL),
+(100, '157.45.95.181', NULL),
+(101, '106.76.147.117', NULL),
+(102, '2409:4063:201e:4e97::402:48ac', NULL),
+(103, '2405:204:a500:e8e2:115f:cc98:6d0c:2b6a', NULL),
+(104, '157.43.31.146', NULL),
+(105, '2409:4053:78b:6d6a::12d:e8a4', NULL),
+(106, '2409:4063:4092:7931::1661:98a0', NULL),
+(107, '104.248.241.76', NULL),
+(108, '157.43.66.155', NULL),
+(109, '2402:3a80:b22:de60:2690:4af8:89ae:f03a', NULL),
+(110, '2405:204:a428:11ed:8208:5b00:e957:ce26', NULL),
+(111, '2405:204:a428:11ed:4cbd:e195:9d89:9699', NULL),
+(112, '157.43.55.155', NULL),
+(113, '2409:4063:409a:60c9::1954:f0a0', NULL),
+(114, '2405:204:a1a6:c340:79a7:7f0a:3f6e:cd1e', NULL),
+(115, '2409:4063:200e:58eb:fe74:5fc6:1785:2e7', NULL),
+(116, '2405:204:a71f:d211:d799:f46b:37c0:81a4', NULL),
+(117, '2405:204:a125:6755:6060:cee8:bcf5:bfe5', NULL),
+(118, '2405:204:a60c:da5e::634:58a4', NULL),
+(119, '112.79.128.14', NULL),
+(120, '2405:205:1406:cf01:f0a0:5a11:2861:6de9', NULL),
+(121, '2409:4063:2115:9e70:ba2:4862:8181:7371', NULL),
+(122, '2405:204:a022:6d2a::249e:80ad', NULL),
+(123, '2405:204:a517:68ef:d978:25b0:b80f:b4b7', NULL),
+(124, '2405:204:a517:68ef:d978:25b0:b80f:b4b7', NULL),
+(125, '2409:4063:228b:ef99::1df9:f0b0', NULL),
+(126, '2402:3a80:993:a8b8:8005:18a6:b54c:da6b', NULL),
+(127, '2402:3a80:993:a8b8:8005:18a6:b54c:da6b', NULL);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `userid_100_member_ip`
+--
+ALTER TABLE `userid_100_member_ip`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `userid_100_member_ip`
+--
+ALTER TABLE `userid_100_member_ip`
+  MODIFY `ID` int(255) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
